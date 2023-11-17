@@ -1,10 +1,10 @@
 import math
-W = ((0, 3, 1, 3, 0, 0),
-     (3, 0, 4, 0, 0, 0),
-     (1, 4, 0, 0, 7, 5),
-     (3, 0, 0, 0, 0, 2),
-     (0, 0, 7, 0, 0, 4),
-     (0, 0, 5, 2, 4, 0))
+W = ((math.inf, 3, 1, 3, math.inf, math.inf),
+     (3, math.inf, 4, math.inf, math.inf, math.inf),
+     (1, 4, math.inf, math.inf, 7, 5),
+     (3, math.inf, math.inf, math.inf, math.inf, 2),
+     (math.inf, math.inf, 7, math.inf, math.inf, 4),
+     (math.inf, math.inf, 5, 2, 4, math.inf))
 start = 0
 n = 6
 INF = math.inf
@@ -28,3 +28,4 @@ while False in visited:
     visited[u] = True
 
 print(dist)
+
